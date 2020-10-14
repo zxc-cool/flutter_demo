@@ -5,7 +5,7 @@ import 'package:oktoast/oktoast.dart';
 import 'common/text/scale_text_widget.dart';
 import 'page/home/home.dart';
 import 'page/login/login.dart';
-import 'theme/waka.dart';
+import 'theme/my_theme.dart';
 
 void main() {
   runApp(MyApp());
