@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_demo/page/routes.dart';
+import 'package:oktoast/oktoast.dart';
 
 class Person extends StatefulWidget {
   @override
@@ -48,6 +49,7 @@ class _PersonState extends State<Person> {
   _buildAuthor(BuildContext context) {
     return InkWell(
       onTap: () {
+        showToast('敬请期待');
       },
       child: Container(
         height: 100,
@@ -108,6 +110,7 @@ class _PersonState extends State<Person> {
       child: Column(
         children: <Widget>[
           _buildItem('我收藏的文章($_collectionCount)', () {
+            showToast('敬请期待');
           }),
           Padding(
             padding: EdgeInsets.only(left: 25),
@@ -116,7 +119,7 @@ class _PersonState extends State<Person> {
             ),
           ),
           _buildItem('我浏览的文章($_browseCount)', () {
-            // Navigator.pushNamed(context, Routes.browse_page);
+            showToast('敬请期待');
           }),
         ],
       ),
